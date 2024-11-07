@@ -1,0 +1,126 @@
+.bgImg{
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/huangfeng.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    font-family: STKaiti, Kaiti SC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagContainer{
+    position: absolute;
+    right: 150px;
+    top: 125px;
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
+    // animation-duration: 3s;
+    // animation-fill-mode: both;
+    // animation-name: tagAnim;
+}
+
+.tagContainerHide{
+    position: absolute;
+    right: 150px;
+    top: 150px;
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
+}
+
+.showTag{
+    // position: absolute;
+    // width: 50px;
+    // height: 200px;
+    padding: 20px 10px;
+    background-image: url('../assets/bosstag.png');
+    background-size: 100% 100%;
+    .tagText{
+        writing-mode: vertical-rl; /* 文字竖向排列 */
+        text-orientation: upright; /* 使每个字保持直立 */
+        text-align: center;
+        color: white;
+        margin: auto;
+        font-size: 23px;
+    }
+
+
+    // mask-image: linear-gradient(to bottom, black 0%, black 100%); /* 设置遮罩 */
+    // mask-size: 100% 0; /* 初始遮罩高度为0 */
+}
+
+@keyframes tagAnim {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        height: 132px ;
+        opacity: 1;
+    }
+  }
+
+
+.skillsContainer{
+    width: 850px;
+    margin-left: 50px;
+    color: #dfdad3;
+    background-color: #000000;
+    // background-image: url('../assets/praise_top_bg.png');
+    // background-size: 100% 100%;
+    // opacity: 0.85;
+    padding: 60px 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px 10px;
+}
+
+.skillBox{
+    width: 118px;
+    height: 100px;
+    position: relative;
+    // background-color: gray;
+    background-image: url('../assets/score.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    .score{
+        margin-top: 10px;
+        color: rgb(192, 174, 127);
+        font-size: 42px;
+    }
+    .totalScore{
+        margin-top: -5px;
+        font-size: 22px;
+    }
+    .subject{
+        color: white;
+    }
+}
+
+[data-aos="my-diy"] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+
+:global([data-aos="my-diy"].aos-animate) {
+    opacity: 0.9;
+    // transform: none;
+}
+
+[data-aos="tag2"] {
+    height: 0;
+    opacity: 0;
+}
+
+:global([data-aos="tag2"].aos-animate) {
+    height: 132px ;
+    opacity: 1;
+    // transform: none;
+}

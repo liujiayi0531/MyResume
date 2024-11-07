@@ -1,0 +1,140 @@
+.bgImg{
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/huaguo2.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    font-family: STKaiti, Kaiti SC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galleryContainer{
+    margin-left: 50px;
+    width: 850px;
+    color: #dfdad3;
+    background-color: rgba(0,0,0,0.85);
+    // background-image: url('../assets/praise_top_bg.png');
+    // background-size: 100% 100%;
+    opacity: 0.85;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px 10px;
+    .web{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .conn{
+        margin-top: 40px;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .website{
+        width: 100%;
+        padding : 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 90px;
+
+        .card{
+            cursor: pointer;
+            .icon{
+                width: 150px;
+                height: 150px;
+                border-radius: 5px;
+            }
+            .name{
+                margin-top: 10px;
+                font-size: 20px;
+            }
+        }
+
+    }
+    .connect{
+        width: 80%;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        display: flex;
+        .wechat{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .qrcode{
+                width: 150x;
+                height: 150px;
+            }
+        }
+        .email{
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+
+    }
+    .iconList{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .connectIcon{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.tagContainer{
+    position: absolute;
+    right: 150px;
+    top: 125px;
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
+    // animation-duration: 3s;
+    // animation-fill-mode: both;
+    // animation-name: tagAnim;
+    .showTag{
+        // position: absolute;
+        // width: 50px;
+        // height: 200px;
+        padding: 20px 10px;
+        background-image: url('../assets/bosstag.png');
+        background-size: 100% 100%;
+        .tagText{
+            writing-mode: vertical-rl; /* 文字竖向排列 */
+            text-orientation: upright; /* 使每个字保持直立 */
+            text-align: center;
+            color: white;
+            margin: auto;
+            font-size: 23px;
+        }
+    
+    
+        // mask-image: linear-gradient(to bottom, black 0%, black 100%); /* 设置遮罩 */
+        // mask-size: 100% 0; /* 初始遮罩高度为0 */
+    }
+}
+
+[data-aos="tag5"] {
+    height: 0;
+    opacity: 0;
+}
+
+:global([data-aos="tag5"].aos-animate) {
+    height: 152px ;
+    opacity: 1;
+    // transform: none;
+}

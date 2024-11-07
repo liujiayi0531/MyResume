@@ -1,0 +1,105 @@
+.bgImg{
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/xitian.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    font-family: STKaiti, Kaiti SC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eduContainer{
+    margin-left: 50px;
+
+    width: 850px;
+    color: #dfdad3;
+    background-color: rgba(0,0,0,0.85);
+    // background-image: url('../assets/praise_top_bg.png');
+    // background-size: 100% 100%;
+    opacity: 0.85;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 28px 0;
+    .content{
+        width: 100%;
+        font-size: 20px;
+        .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .school{
+                font-size: 42px;
+            }
+            .degree{
+                margin-left: 45px;
+                font-size: 24px;
+            }
+            .locate{
+                margin-left: auto;
+                margin-right: 35px;
+            }
+        }
+        .secondLine{
+            margin-top: 6px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 24px;
+        }
+        .detail{
+            margin-top: 10px;
+            text-align: left;
+        }
+
+    }
+}
+
+.tagContainer{
+    position: absolute;
+    right: 150px;
+    top: 125px;
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
+    // animation-duration: 3s;
+    // animation-fill-mode: both;
+    // animation-name: tagAnim;
+    .showTag{
+        // position: absolute;
+        // width: 50px;
+        // height: 200px;
+        padding: 20px 10px;
+        background-image: url('../assets/bosstag.png');
+        background-size: 100% 100%;
+        .tagText{
+            writing-mode: vertical-rl; /* 文字竖向排列 */
+            text-orientation: upright; /* 使每个字保持直立 */
+            text-align: center;
+            color: white;
+            margin: auto;
+            font-size: 23px;
+        }
+    
+    
+        // mask-image: linear-gradient(to bottom, black 0%, black 100%); /* 设置遮罩 */
+        // mask-size: 100% 0; /* 初始遮罩高度为0 */
+    }
+}
+
+[data-aos="tag3"] {
+    height: 0;
+    opacity: 0;
+}
+
+:global([data-aos="tag3"].aos-animate) {
+    height: 132px ;
+    opacity: 1;
+    // transform: none;
+}
