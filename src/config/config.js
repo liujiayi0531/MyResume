@@ -84,9 +84,9 @@ const config = {
     ],
     gallery:{
         website:[
-            {name: '擎舵AIGC平台', url: 'https://qingduo.baidu.com/', image:'../assets/qingduo.png'},
-            {name: '先锋云游戏', url: 'https://gamer.qq.com/', image:'../assets/gamer.png'},
-            {name: 'Sovits语音模型训练', url:'https://www.bilibili.com/video/BV1dW421A7oa/?vd_source=3c9aa31a80d766a70d5254545616e040', image:'../assets/sovits.png'}
+            {name: '擎舵AIGC平台', url: 'https://qingduo.baidu.com/', image:'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/qingduo.png'},
+            {name: '先锋云游戏', url: 'https://gamer.qq.com/', image:'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/gamer.png'},
+            {name: 'Sovits语音模型训练', url:'https://www.bilibili.com/video/BV1dW421A7oa/?vd_source=3c9aa31a80d766a70d5254545616e040', image:'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/sovits.png'}
         ],
         connect:[
             {name: '微信', image: 'src/assets/wechat.png'},

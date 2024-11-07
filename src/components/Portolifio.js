@@ -1,10 +1,11 @@
 
 import { useState, useEffect, forwardRef } from 'react';
 import style from './Portolifio.module.scss';
-import avatar from '../assets/avatar.jpg';
+// import avatar from 'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/avatar.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+const avatar = 'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/avatar.jpg';
 const Portolifio = forwardRef(
     ({info}, ref) => {
         // useImperativeHandle(ref , ()=>({

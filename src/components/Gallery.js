@@ -1,16 +1,22 @@
 import style from "./Gallery.module.scss"
 
 import { forwardRef, useImperativeHandle, useState } from "react"
-import qingduo from '../assets/qingduo.png';
-import gamer from '../assets/gamer.png';
-import sovits from '../assets/sovits.png';
-import qrcode from '../assets/wechat.png'
-import wechatIcon from '../assets/wechatIcon.png'
-import emailIcon from '../assets/email.png'
+// import qingduo from 'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/qingduo.png';
+// import gamer from 'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/gamer.png';
+// import sovits from 'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/sovits.png';
+// import qrcode from 'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/wechat.png'
+// import wechatIcon from 'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/wechatIcon.png'
+// import emailIcon from 'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/email.png'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+const qingduo = 'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/qingduo.png';
+const gamer = 'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/gamer.png';
+const sovits = 'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/sovits.png';
+const qrcode = 'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/wechat.png'
+const wechatIcon = 'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/wechatIcon.png'
+const emailIcon = 'https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/email.png'
 const imageList = [qingduo, gamer, sovits];
 const Gallery = forwardRef(
     ({info}, ref) => {
