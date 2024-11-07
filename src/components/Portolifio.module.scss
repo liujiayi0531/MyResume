@@ -42,10 +42,11 @@
 .tagContainer{
     position: absolute;
     right: 150px;
-    top: 125px;
+    top:30vh;
     overflow: hidden;
     height: 0px;
     opacity: 0;
+    transform: translateY(-20vh);
     // animation-duration: 3s;
     // animation-fill-mode: both;
     // animation-name: tagAnim;

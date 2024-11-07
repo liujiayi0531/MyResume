@@ -98,73 +98,86 @@ function App() {
         }, 700);
     }
 
-  return (
-    <div className="App">
-        <Portolifio ref={portolifioRef} info={config.index}></Portolifio>
-        <SkillStack ref={skillStackRef} info={config.skills}></SkillStack>
-        <Education ref={educationRef} info={config.education}></Education>
-        {config.work.map((item, index)=>{
-          return <WorkExperience key={item.company} info={item} index={index}></WorkExperience>
-        })}
-        <Gallery info={config.gallery}></Gallery>
-        <div className='tabBar'>
-            <div className='tabItem'>
-              <div onClick={()=>{scrollToAnchor(anchors[0]); resetObserver(anchors[0])}} 
-                className={`iconContainer ${activeTab === anchors[0] ? 'active':''}`}
-                >
-                <div className='icon'></div>
-                <div className='iconHover'></div>
-                <div className='infoText'>简介</div>
-              </div>
-            </div>
-            <div className='tabItem'>
-            <div onClick={()=>{scrollToAnchor(anchors[1]); resetObserver(anchors[1])}} 
-            className={`iconContainer ${activeTab === anchors[1] ? 'active':''}`}
->
-                <div className='icon'></div>
-                <div className='iconHover'></div>
-                <div className='infoText'>技术栈</div>
-              </div>
-            </div>
-            <div className='tabItem'>
-            <div onClick={()=>{scrollToAnchor(anchors[2]); resetObserver(anchors[2])}}
-                className={`iconContainer ${activeTab === anchors[2] ? 'active':''}`}>
-                <div className='icon'></div>
-                <div className='iconHover'></div>
-                <div className='infoText'>教育经历</div>
-              </div>
-            </div>
-            {/* <div className='tabItem'>
-            <div onClick={()=>{scrollToAnchor(anchors[3]); resetObserver(anchors[3])}}
-                className={`iconContainer ${activeTab === anchors[3] ? 'active':''}`}>
-                <div className='icon'></div>
-                <div className='iconHover'></div>
-                <div className='infoText'>工作经历</div>
-              </div>
-            </div> */}
-            {
-              config.work.map(
-                (item, index)=>{
-                    return <div key={item.company} className='tabItem'>
-                    <div onClick={()=>{scrollToAnchor(anchors[3+index]); resetObserver(anchors[3+index])}}
-                        className={`iconContainer ${activeTab === anchors[3+index] ? 'active':''}`}>
-                        <div className='icon'></div>
-                        <div className='iconHover'></div>
-                        <div className='infoText'>工作经历{index+1===1?'一':index+1===2?'二':'三'}</div>
-                      </div>
-                    </div>
+    const isMobileDevice =()=>{
+      return window.matchMedia("(max-width:768px)").matches;
+    }
+
+
+    if(isMobileDevice()){
+      return <div className='notsupport'>
+        <div className='text'>暂不支持移动端</div>
+      </div>;
+    } else{
+      return (
+        <div className="App">
+            <Portolifio ref={portolifioRef} info={config.index}></Portolifio>
+            <SkillStack ref={skillStackRef} info={config.skills}></SkillStack>
+            <Education ref={educationRef} info={config.education}></Education>
+            {config.work.map((item, index)=>{
+              return <WorkExperience key={item.company} info={item} index={index}></WorkExperience>
+            })}
+            <Gallery info={config.gallery}></Gallery>
+            <div className='tabBar'>
+                <div className='tabItem'>
+                  <div onClick={()=>{scrollToAnchor(anchors[0]); resetObserver(anchors[0])}} 
+                    className={`iconContainer ${activeTab === anchors[0] ? 'active':''}`}
+                    >
+                    <div className='icon'></div>
+                    <div className='iconHover'></div>
+                    <div className='infoText'>简介</div>
+                  </div>
+                </div>
+                <div className='tabItem'>
+                <div onClick={()=>{scrollToAnchor(anchors[1]); resetObserver(anchors[1])}} 
+                className={`iconContainer ${activeTab === anchors[1] ? 'active':''}`}
+    >
+                    <div className='icon'></div>
+                    <div className='iconHover'></div>
+                    <div className='infoText'>技术栈</div>
+                  </div>
+                </div>
+                <div className='tabItem'>
+                <div onClick={()=>{scrollToAnchor(anchors[2]); resetObserver(anchors[2])}}
+                    className={`iconContainer ${activeTab === anchors[2] ? 'active':''}`}>
+                    <div className='icon'></div>
+                    <div className='iconHover'></div>
+                    <div className='infoText'>教育经历</div>
+                  </div>
+                </div>
+                {/* <div className='tabItem'>
+                <div onClick={()=>{scrollToAnchor(anchors[3]); resetObserver(anchors[3])}}
+                    className={`iconContainer ${activeTab === anchors[3] ? 'active':''}`}>
+                    <div className='icon'></div>
+                    <div className='iconHover'></div>
+                    <div className='infoText'>工作经历</div>
+                  </div>
+                </div> */}
+                {
+                  config.work.map(
+                    (item, index)=>{
+                        return <div key={item.company} className='tabItem'>
+                        <div onClick={()=>{scrollToAnchor(anchors[3+index]); resetObserver(anchors[3+index])}}
+                            className={`iconContainer ${activeTab === anchors[3+index] ? 'active':''}`}>
+                            <div className='icon'></div>
+                            <div className='iconHover'></div>
+                            <div className='infoText'>工作经历{index+1===1?'一':index+1===2?'二':'三'}</div>
+                          </div>
+                        </div>
+                    }
+                  )
                 }
-              )
-            }
-            <div onClick={()=>{scrollToAnchor(anchors[3+config.work.length]); resetObserver(anchors[3+config.work.length])}}
-                className={`iconContainer ${activeTab === anchors[3+config.work.length] ? 'active':''}`}>
-                <div className='icon'></div>
-                <div className='iconHover'></div>
-                <div className='infoText'>联系我</div>
+                <div onClick={()=>{scrollToAnchor(anchors[3+config.work.length]); resetObserver(anchors[3+config.work.length])}}
+                    className={`iconContainer ${activeTab === anchors[3+config.work.length] ? 'active':''}`}>
+                    <div className='icon'></div>
+                    <div className='iconHover'></div>
+                    <div className='infoText'>联系我</div>
+                  </div>
               </div>
-          </div>
-    </div>
-  );
+        </div>
+      );
+    }
+
+
 }
 
 export default App;

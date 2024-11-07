@@ -5,6 +5,21 @@
   background-color: #282c34;
 }
 
+.notsupport{
+  height: 100vh;
+  background: url("https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/mobile.jpg");
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .text{
+    margin-bottom: 10vh;
+    font-family: STKaiti, Kaiti SC;
+    font-size: 2.5rem;
+    color: white;
+  }
+}
+
 .tabBar{
     position: fixed;
     top: 0;

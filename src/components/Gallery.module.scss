@@ -99,7 +99,8 @@
 .tagContainer{
     position: absolute;
     right: 150px;
-    top: 125px;
+    top:30vh;
+    transform: translateY(-20vh);
     overflow: hidden;
     height: 0px;
     opacity: 0;
