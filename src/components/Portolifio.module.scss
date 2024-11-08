@@ -111,7 +111,7 @@
     // background-image: url('https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/cover.jpg');
     // background-size: 100% 100%;
     // border-radius: 50%;
-    margin-bottom: 80px;
+    // margin-bottom: 30px;
     position: relative;
     animation-duration: 2.5s;
     animation-fill-mode: both;
@@ -124,6 +124,7 @@
         position: relative;
         z-index: 101;
     }
+    transform: translateY(-80px);
 }
 
 @keyframes pulsate {
