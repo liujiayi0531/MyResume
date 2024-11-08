@@ -24,15 +24,15 @@
   }
   
 .pInfo{
-    margin-left: 50px;
-    width: 850px;
+    margin-left: 6.125rem;
+    width: 53.125rem;
     color: #dfdad3;
     background-color: rgba(0,0,0,0.85);
     // background-image: url('https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/praise_top_bg.png');
     // background-size: 100% 100%;
     opacity: 0.85;
-    padding: 30px;
-    border-radius: 20px;
+    padding: 1.875rem;
+    border-radius: 1.25rem;
 
     // animation-duration: 2.5s;
     // animation-fill-mode: both;
@@ -41,10 +41,10 @@
 
 .tagContainer{
     position: absolute;
-    right: 70px;
+    right: 4.375rem;
     top:30vh;
     overflow: hidden;
-    height: 0px;
+    height: 0rem;
     opacity: 0;
     transform: translateY(-20vh);
     // animation-duration: 3s;
@@ -54,18 +54,18 @@
 
 .tagContainerHide{
     position: absolute;
-    right: 150px;
-    top: 150px;
+    right: 9.375rem;
+    top: 9.375rem;
     overflow: hidden;
-    height: 0px;
+    height: 0rem;
     opacity: 0;
 }
 
 .showTag{
     // position: absolute;
-    // width: 50px;
-    // height: 200px;
-    padding: 30px 12px;
+    // width: 3.125rem;
+    // height: 12.5rem;
+    padding: 1.875rem .75rem;
     // background-color: #000;
     background-image: url('https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/bosstag.png');
     background-size: 100% 100%;
@@ -75,7 +75,7 @@
         text-align: center;
         color: white;
         margin: auto;
-        font-size: 23px;
+        font-size: 1.4375rem;
     }
 
 
@@ -89,7 +89,7 @@
 }
 
 :global([data-aos="tag1"].aos-animate) {
-    height: 152px ;
+    height: 9.5rem ;
     opacity: 1;
     // transform: none;
 }
@@ -100,26 +100,26 @@
         opacity: 0;
     }
     to {
-        height: 152px ;
+        height: 9.5rem ;
         opacity: 1;
     }
   }
 
 .avatar{
-    width: 130px;
-    height: 130px;
+    width: 8.125rem;
+    height: 8.125rem;
     // background-image: url('https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/cover.jpg');
     // background-size: 100% 100%;
     // border-radius: 50%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
     position: relative;
     animation-duration: 2.5s;
     animation-fill-mode: both;
     animation-name: fadeInLeft;
     .avatarImg{
-        width: 130px;
-        height: 130px;
+        width: 8.125rem;
+        height: 8.125rem;
         border-radius: 50%;
         object-fit: cover;
         position: relative;
@@ -145,13 +145,13 @@
 
 .avatar:before {
     content: "";
-    border: 10px solid rgb(201, 210, 164);
+    border: .625rem solid rgb(201, 210, 164);
     border-radius: 50%;
-    height: 130px;
-    width: 130px;
+    height: 8.125rem;
+    width: 8.125rem;
     position: absolute;
-    left: -10px;
-    top: -10px;
+    left: -0.625rem;
+    top: -0.625rem;
     -webkit-animation: pulsate 1.6s ease-out;
     animation: pulsate 1.6s ease-out;
     -webkit-animation-iteration-count: infinite;
@@ -161,8 +161,8 @@
 }
 
 .name{
-    font-size: 68px;
-    height: 80px;
+    font-size: 4.25rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,20 +175,20 @@
 }
 
 .personInfo{
-    font-size: 42px;
+    font-size: 2.625rem;
     flex: 1 1 50%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .summary{
-    font-size: 27px;
+    font-size: 1.6875rem;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 1.5625rem;
     line-height: 1.15;
 }
 
 .motto{
-    font-size: 35px;
+    font-size: 2.1875rem;
     width: 100%;
 }
 
@@ -206,12 +206,12 @@
 
 .motto::after{
     position: relative;
-    top: 5px;
+    top: .3125rem;
     display: inline-block;
-    height: 28px;
-    margin-left: 5px;
+    height: 1.75rem;
+    margin-left: .3125rem;
     content: " ";
     -webkit-animation: blink .5s step-end infinite alternate;
     animation: blink .5s step-end infinite alternate;
-    border-right: 2px solid;
+    border-right: .125rem solid;
 }

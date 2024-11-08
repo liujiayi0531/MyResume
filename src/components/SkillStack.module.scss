@@ -12,11 +12,11 @@
 
 .tagContainer{
     position: absolute;
-    right: 70px;
+    right: 4.375rem;
     top:30vh;
     transform: translateY(-20vh);
     overflow: hidden;
-    height: 0px;
+    height: 0rem;
     opacity: 0;
     // animation-duration: 3s;
     // animation-fill-mode: both;
@@ -25,18 +25,18 @@
 
 .tagContainerHide{
     position: absolute;
-    right: 150px;
-    top: 150px;
+    right: 9.375rem;
+    top: 9.375rem;
     overflow: hidden;
-    height: 0px;
+    height: 0rem;
     opacity: 0;
 }
 
 .showTag{
     // position: absolute;
-    // width: 50px;
-    // height: 200px;
-    padding: 20px 10px;
+    // width: 3.125rem;
+    // height: 12.5rem;
+    padding: 1.25rem .625rem;
     background-image: url('https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/bosstag.png');
     background-size: 100% 100%;
     .tagText{
@@ -45,7 +45,7 @@
         text-align: center;
         color: white;
         margin: auto;
-        font-size: 23px;
+        font-size: 1.4375rem;
     }
 
 
@@ -59,32 +59,32 @@
         opacity: 0;
     }
     to {
-        height: 132px ;
+        height: 8.25rem ;
         opacity: 1;
     }
   }
 
 
 .skillsContainer{
-    width: 850px;
-    margin-left: 50px;
+    width: 53.125rem;
+    margin-left: 6.125rem;
     color: #dfdad3;
     background-color: #000000;
     // background-image: url('https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/praise_top_bg.png');
     // background-size: 100% 100%;
     // opacity: 0.85;
-    padding: 60px 30px;
-    border-radius: 20px;
+    padding: 3.75rem 1.875rem;
+    border-radius: 1.25rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 30px 10px;
+    gap: 1.875rem .625rem;
 }
 
 .skillBox{
-    width: 118px;
-    height: 100px;
+    width: 7.375rem;
+    height: 6.25rem;
     position: relative;
     // background-color: gray;
     background-image: url('https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/score.jpg');
@@ -92,13 +92,13 @@
     display: flex;
     flex-direction: column;
     .score{
-        margin-top: 10px;
+        margin-top: .625rem;
         color: rgb(192, 174, 127);
-        font-size: 42px;
+        font-size: 2.625rem;
     }
     .totalScore{
-        margin-top: -5px;
-        font-size: 22px;
+        margin-top: -0.3125rem;
+        font-size: 1.375rem;
     }
     .subject{
         color: white;
@@ -121,7 +121,7 @@
 }
 
 :global([data-aos="tag2"].aos-animate) {
-    height: 132px ;
+    height: 8.25rem ;
     opacity: 1;
     // transform: none;
 }

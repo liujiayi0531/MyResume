@@ -23,7 +23,7 @@
 .tabBar{
     position: fixed;
     top: 0;
-    left: 50px;
+    left: 3.125rem;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -38,11 +38,11 @@
 }
 
 .iconContainer{
-  // width: 34px;
+  // width: 2.125rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 64px;
+  height: 4rem;
   position: relative;
   &:hover{
     .iconHover{
@@ -64,7 +64,7 @@
   }
   .infoText{
     opacity: 1;
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
   &:hover{
     .iconHover{
@@ -74,8 +74,8 @@
 }
 
 .icon{
-  width: 34px;
-  height: 64px;
+  width: 2.125rem;
+  height: 4rem;
   background-image: url("./assets/nav_df.png");
   background-size: 100% 100%;
   opacity: 0.4;
@@ -84,8 +84,8 @@
 .iconHover{
   position: absolute;
   top: 0;
-  width: 34px;
-  height: 64px;
+  width: 2.125rem;
+  height: 4rem;
   background-image: url("./assets/nav_hover.png");
   background-size: 100% 100%;
   display: none;
@@ -93,8 +93,8 @@
 }
 
 .infoText{
-  margin-left: 10px;
-  font-size: 20px;
+  margin-left: .625rem;
+  font-size: 1.25rem;
   color: white;
   cursor:default;
   opacity: 0.6;
@@ -118,7 +118,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(.625rem + 2vmin);
   color: white;
 }
 

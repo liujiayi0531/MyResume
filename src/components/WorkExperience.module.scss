@@ -11,39 +11,39 @@
 }
 
 .workContainer{
-    margin-left: 50px;
-    width: 850px;
+    margin-left: 6.125rem;
+    width: 53.125rem;
     color: #dfdad3;
     background-color: rgba(0,0,0,0.75);
     // background-image: url('https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/praise_top_bg.png');
     // background-size: 100% 100%;
     opacity: 0.85;
-    padding: 30px;
-    border-radius: 20px;
+    padding: 1.875rem;
+    border-radius: 1.25rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 10px 10px;
+    gap: .625rem .625rem;
     .header{
         width: 100%;
         display: flex;
         flex-direction: row;
-        font-size: 20px;
+        font-size: 1.25rem;
         align-items: center;
         justify-content: space-between;
         .department{
             margin-left: auto;
-            margin-right: 35px;
-            font-size: 24px;
+            margin-right: 2.1875rem;
+            font-size: 1.5rem;
         }
         .company{
-            font-size: 42px;
+            font-size: 2.625rem;
         }
         .position{
             // margin-left: auto;
-            margin-right: 35px;
+            margin-right: 2.1875rem;
         }
     }
     .projects{
@@ -51,20 +51,20 @@
         text-align: left;
         display: flex;
         flex-direction: column;
-        gap: 20px 0;
+        gap: 1.25rem 0;
         .ind{
-            font-size: 24px;
+            font-size: 1.5rem;
             display: flex;
         }
         .stack{
-            margin-top: 6px;
-            font-size: 20px;
+            margin-top: .375rem;
+            font-size: 1.25rem;
             font-style: italic;
             font-weight: bold;
         }
         .content{
-            margin-top: 4px;
-            font-size: 18px;
+            margin-top: .25rem;
+            font-size: 1.125rem;
             white-space: pre-line;
             line-height: 1.3;
         }
@@ -73,20 +73,20 @@
 
 .tagContainer{
     position: absolute;
-    right: 70px;
+    right: 4.375rem;
     top:30vh;
     transform: translateY(-20vh);
     overflow: hidden;
-    height: 0px;
+    height: 0rem;
     opacity: 0;
     // animation-duration: 3s;
     // animation-fill-mode: both;
     // animation-name: tagAnim;
     .showTag{
         // position: absolute;
-        // width: 50px;
-        // height: 200px;
-        padding: 20px 10px;
+        // width: 3.125rem;
+        // height: 12.5rem;
+        padding: 1.25rem .625rem;
         background-image: url('https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/bosstag.png');
         background-size: 100% 100%;
         .tagText{
@@ -95,7 +95,7 @@
             text-align: center;
             color: white;
             margin: auto;
-            font-size: 23px;
+            font-size: 1.4375rem;
         }
     
     
@@ -110,7 +110,7 @@
 }
 
 :global([data-aos="tag4"].aos-animate) {
-    height: 152px ;
+    height: 9.5rem ;
     opacity: 1;
     // transform: none;
 }

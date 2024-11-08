@@ -10,51 +10,51 @@
     align-items: center;
 }
 .eduContainer{
-    margin-left: 50px;
+    margin-left: 6.125rem;
 
-    width: 850px;
+    width: 53.125rem;
     color: #dfdad3;
     background-color: rgba(0,0,0,0.85);
     // background-image: url('https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/praise_top_bg.png');
     // background-size: 100% 100%;
     opacity: 0.85;
-    padding: 30px;
-    border-radius: 20px;
+    padding: 1.875rem;
+    border-radius: 1.25rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 28px 0;
+    gap: 1.75rem 0;
     .content{
         width: 100%;
-        font-size: 20px;
+        font-size: 1.25rem;
         .header{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
             .school{
-                font-size: 42px;
+                font-size: 2.625rem;
             }
             .degree{
-                margin-left: 45px;
-                font-size: 24px;
+                margin-left: 2.8125rem;
+                font-size: 1.5rem;
             }
             .locate{
                 margin-left: auto;
-                margin-right: 35px;
+                margin-right: 2.1875rem;
             }
         }
         .secondLine{
-            margin-top: 6px;
+            margin-top: .375rem;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            font-size: 24px;
+            font-size: 1.5rem;
         }
         .detail{
-            margin-top: 10px;
+            margin-top: .625rem;
             text-align: left;
         }
 
@@ -63,20 +63,20 @@
 
 .tagContainer{
     position: absolute;
-    right: 70px;
+    right: 4.375rem;
     top:30vh;
     transform: translateY(-20vh);
     overflow: hidden;
-    height: 0px;
+    height: 0rem;
     opacity: 0;
     // animation-duration: 3s;
     // animation-fill-mode: both;
     // animation-name: tagAnim;
     .showTag{
         // position: absolute;
-        // width: 50px;
-        // height: 200px;
-        padding: 20px 10px;
+        // width: 3.125rem;
+        // height: 12.5rem;
+        padding: 1.25rem .625rem;
         background-image: url('https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/bosstag.png');
         background-size: 100% 100%;
         .tagText{
@@ -85,7 +85,7 @@
             text-align: center;
             color: white;
             margin: auto;
-            font-size: 23px;
+            font-size: 1.4375rem;
         }
     
     
@@ -100,7 +100,7 @@
 }
 
 :global([data-aos="tag3"].aos-animate) {
-    height: 132px ;
+    height: 8.25rem ;
     opacity: 1;
     // transform: none;
 }

@@ -24,8 +24,19 @@ function App() {
     // 教育子组件
     const educationRef = useRef(null);
 
+    function setRemBasedOnViewport() {
+      const baseSize = 16; // 基础 font-size，例如 16px
+      const designWidth = 1344; // 设计稿宽度基准，例如 375px
+  
+      // 计算比例并设置根元素 font-size，确保字体大小不超过最大限制
+      const scale = document.documentElement.clientWidth / designWidth;
+      document.documentElement.style.fontSize = (baseSize * scale) + 'px';
+  }
+
     useEffect(
         ()=>{
+          setRemBasedOnViewport();
+          window.addEventListener('resize', setRemBasedOnViewport);
           const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
