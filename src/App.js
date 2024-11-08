@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import './App.scss';
 import Education from './components/Education';
 import Gallery from './components/Gallery';
@@ -33,10 +33,18 @@ function App() {
       document.documentElement.style.fontSize = (baseSize * scale) + 'px';
   }
 
+    useLayoutEffect(
+      ()=>{
+        setRemBasedOnViewport();
+        window.addEventListener('resize', setRemBasedOnViewport);
+        return ()=>{
+          window.removeEventListener('resize', setRemBasedOnViewport);
+        }
+      }
+    )
+
     useEffect(
         ()=>{
-          setRemBasedOnViewport();
-          window.addEventListener('resize', setRemBasedOnViewport);
           const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
