@@ -6,7 +6,7 @@
     position: relative;
     font-family: STKaiti, Kaiti SC;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-direction: column;
 }
@@ -41,7 +41,7 @@
 
 .tagContainer{
     position: absolute;
-    right: 150px;
+    right: 70px;
     top:30vh;
     overflow: hidden;
     height: 0px;
@@ -111,7 +111,8 @@
     // background-image: url('https://myweb-1301075348.cos.ap-shanghai.myqcloud.com/assets/cover.jpg');
     // background-size: 100% 100%;
     // border-radius: 50%;
-    // margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     position: relative;
     animation-duration: 2.5s;
     animation-fill-mode: both;
@@ -124,7 +125,6 @@
         position: relative;
         z-index: 101;
     }
-    transform: translateY(-80px);
 }
 
 @keyframes pulsate {
